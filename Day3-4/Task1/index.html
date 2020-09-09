@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Changer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Task1: Image Changer on Button Click</h1>
+    <div id="Image_changing" class="imageStyle"><img src="./images/image1.jpg" class="imageborder" alt="image1"
+            width="600px;" height="400px;"></div>
+    <div class="btn">
+
+        <button class="btnStyle" onclick="firstImage()">First Image</button>
+        <button class="btnStyle" onclick="changeImage1()">Change First Image</button>
+        <button class="btnStyle" onclick="changeImage2()">Change Second Image</button>
+
+    </div>
+    <script>
+        function firstImage() {
+            document.getElementById("Image_changing").innerHTML =
+                '<img src="./images/image1.jpg" class="imageborder" width="600px;" height="400px;">';
+        }
+
+        function changeImage1() {
+            document.getElementById("Image_changing").innerHTML =
+                '<img src="./images/image2.jpg" class="imageborder" width="600px;" height="400px;">';
+        }
+
+        function changeImage2() {
+            document.getElementById("Image_changing").innerHTML =
+                '<img src="./images/image3.jpg"class="imageborder" width="600px;" height="400px;">';
+        }
+    </script>
+</body>
+
+</html>

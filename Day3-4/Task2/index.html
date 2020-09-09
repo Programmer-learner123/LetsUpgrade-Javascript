@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Text Changer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="inputsLook">
+        <h1>Task 2: Input text Changer</h1>
+        <div class="div1">
+            <label> Enter Text in First Input: </label>
+            <input type="text" class="inputStyle" id="input-get" placeholder="
+        Enter Any Text">
+        </div>
+
+        <label class="label1"> On clicking the button below the
+            Text from first input will be transfered to second input.</label>
+        <div class="div2">
+            <button class="btn" id="btn-set">Transfer Text from 1st input to 2nd</button>
+            <input type="text" class="inputStyle" name="text2" id="input-set" placeholder="Input Text set">
+        </div>
+
+    </div>
+
+
+    <script>
+        let btnSet = document.querySelector('#btn-set');
+        let inputGet = document.querySelector('#input-get');
+        let inputSet = document.querySelector('#input-set');
+
+        btnSet.addEventListener('click', () => {
+            inputSet.value = inputGet.value;
+            document.getElementById("input-get").value = "";
+        });
+    </script>
+</body>
+
+</html>

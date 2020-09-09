@@ -1,0 +1,45 @@
+.imageStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+
+}
+
+h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.imageborder {
+    border: 15px dashed violet;
+}
+
+body {
+    background-color: #8b58bf;
+}
+
+.btn {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btnStyle {
+    width: 160px;
+    height: 100px;
+    color: white;
+    background-color: blueviolet;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}

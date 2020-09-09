@@ -1,0 +1,25 @@
+body {
+    background-color: peru;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+.btn {
+    cursor: pointer;
+    width: 300px;
+    height: 80px;
+    color: white;
+    background-color: peru;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-top: 50px;
+    margin-left: 500px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-color: brown;
+
+}
