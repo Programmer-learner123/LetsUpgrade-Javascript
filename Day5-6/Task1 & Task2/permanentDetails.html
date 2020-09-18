@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Functionality System</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .data {
+            font-family: 'Segoe UI';
+            height: 700px;
+            width: 80%;
+            background-image: linear-gradient(to right top, #2d9faa, #2cb0b8, #2dc1c5, #30d2d1, #36e3dc);
+            margin-left: 10%;
+            margin-top: 50px;
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .table {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        th,
+        td {
+            height: 40px;
+            text-align: center;
+            padding: 5px;
+        }
+
+        .form {
+
+
+            margin-top: 20px;
+        }
+
+        input {
+            height: 40px;
+            text-indent: 20px;
+            margin-top: 20px;
+            width: 300px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="data">
+        <h1>Bus Add Functionality</h1>
+        <div class="form">
+            <form onsubmit="addBusDetails(event)">
+                <input type="text" id="name" placeholder="Enter bus name" required>&nbsp; &nbsp;&nbsp;
+                <input type="text" id="source" placeholder="Enter bus source name" required>&nbsp; &nbsp;&nbsp;
+                <input type="text" id="destination" placeholder="Enter bus destination name" required><br>
+                <input type="text" id="number" placeholder="Enter bus number" required>&nbsp; &nbsp;&nbsp;
+                <input type="number" id="passengerCapacity" placeholder="Enter bus passenger carrying capacity"
+                    required>&nbsp; &nbsp;&nbsp;
+
+                <button type="submit">Add Bus Details</button>
+                <!-- required works only if i have submit btn-->
+                <!-- if if dont put submit btn thhen call the function; by default submit btn refreshes ur page
+                once the page gets refereshed the js doesn't work
+            and if we dont keep submit btn then validations will not work-->
+            </form>
+        </div>
+
+        <div class="form">
+            <input type="text" placeholder="Start Searching here" onkeyup="searchBySourceDestination()"
+                id="searchBySourcedEstination">
+        </div>
+        <br>
+        <br>
+        <table border="1" class="table" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Sr no</th>
+                    <th>Name</th>
+                    <th>Source</th>
+                    <th>Destination</th>
+                    <th>Bus Number</th>
+                    <th>Passenger Capacity</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="tdata">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./permanentDetails.js"></script>
+</body>
+
+</html>
